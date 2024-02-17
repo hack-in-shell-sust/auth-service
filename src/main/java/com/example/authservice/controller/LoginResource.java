@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RequiredArgsConstructor
 @RestController
-@RequestMapping(value = "/api/login")
+@RequestMapping(value = "/auth/login")
 public class LoginResource {
 	private final LoginService loginService;
 
