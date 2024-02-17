@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 public class RegistrationResource {
 	private final RegistrationService registrationService;
 
-    @PostMapping("/signup")
+    @PostMapping("/user")
 	public ResponseEntity<CreateUserResponse> registerUser(@RequestBody CreateUserRequest createRequest) {
 		CreateUserResponse response =  registrationService.registerUser(createRequest);
 		return ResponseEntity.ok(response);

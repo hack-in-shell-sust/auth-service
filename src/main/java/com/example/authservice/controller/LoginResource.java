@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LoginResource {
 	private final LoginService loginService;
 
-    @PostMapping("/login")
+    @PostMapping("/user")
 	public ApiResponse<LoginResponse> registerUser(@RequestBody LoginRequest loginRequest) {
 		LoginResponse response = loginService.loginUser(loginRequest);
 		return ResponseUtils.createSuccessResponseObject("Success", response);
