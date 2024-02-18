@@ -33,7 +33,7 @@ public class RegistrationService extends BaseService {
 //        sendVerificationEmail(createRequest.getEmail());
 
         // TODO: Save request in temp and send response
-        return new CreateUserResponse(user.getFirstName(), user.getLastName(), user.getEmail());
+        return new CreateUserResponse(user.getFirstName(), user.getLastName(), user.getEmail(), user.getId());
     }
 
     private User createUserAccount(CreateUserRequest createRequest) {
