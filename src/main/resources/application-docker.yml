@@ -37,4 +37,4 @@ server:
 
 
 cors:
-  allowed-origin: http://localhost:8080
+  allowed-origin: http://api-gateway:8080
