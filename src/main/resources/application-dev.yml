@@ -15,7 +15,7 @@ spring:
 #    bootstrap-servers: localhost:8697
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://postgres:5432/hs_dzbb?currentSchema=user_service&user=hp&password=SFgIgwXeJD5QNWpFcMLDaVvL5BFANp0K
+    url: jdbc:postgresql://localhost:5432/hs_dzbb?currentSchema=user_service&user=hp&password=SFgIgwXeJD5QNWpFcMLDaVvL5BFANp0K
     username: hp
     password: SFgIgwXeJD5QNWpFcMLDaVvL5BFANp0K
   jpa:
@@ -38,3 +38,7 @@ server:
 
 cors:
   allowed-origin: http://localhost:8080
+
+springdoc:
+  swagger-ui:
+    path: /auth/swagger-ui.html
